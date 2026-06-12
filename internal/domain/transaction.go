@@ -3,7 +3,6 @@ package domain
 import (
 	"errors"
 	"time"
-
 	"github.com/google/uuid"
 )
 
@@ -15,7 +14,6 @@ var (
 	ErrTransactionNotRefundable = errors.New("only completed transactions can be refunded")
 	ErrDuplicateTransaction     = errors.New("duplicate transaction detected")
 )
-
 type PaymentStatus string
 
 const (

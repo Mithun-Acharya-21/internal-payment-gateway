@@ -3,7 +3,6 @@ package middleware
 import (
 	"net/http"
 	"strings"
-
 	"github.com/Mithun-Acharya-21/internal-payment-gateway/pkg/response"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

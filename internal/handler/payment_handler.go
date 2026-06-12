@@ -103,12 +103,14 @@ func (h *PaymentHandler) ListPayments(c *gin.Context) {
 
 func (h *PaymentHandler) RefundPayment(c *gin.Context) {
 	id, err := uuid.Parse(c.Param("id"))
+
 	if err != nil {
 		response.BadRequest(c, "invalid transaction id")
 		return
 	}
 
 	refund, err := h.svc.RefundPayment(c.Request.Context(), id)
+	
 	if err != nil {
 		h.handleServiceError(c, err)
 		return

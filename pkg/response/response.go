@@ -3,11 +3,9 @@ package response
 import (
 	"errors"
 	"net/http"
-
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 )
-
 type APIResponse struct {
 	Success   bool        `json:"success"`
 	Message   string      `json:"message"`

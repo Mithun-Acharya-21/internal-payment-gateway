@@ -19,7 +19,6 @@ func RequestID() gin.HandlerFunc {
 		c.Next()
 	}
 }
-
 func Logger(logger *zap.Logger) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		start := time.Now()

@@ -31,7 +31,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "failed to init logger: %v\n", err)
 		os.Exit(1)
 	}
-	defer logger.Sync() //nolint:errcheck
+	defer logger.Sync() 
 
 	db, err := database.NewPostgres(cfg.DatabaseURL)
 	if err != nil {
