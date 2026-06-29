@@ -8,7 +8,6 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-
 	"github.com/Mithun-Acharya-21/internal-payment-gateway/internal/config"
 	"github.com/Mithun-Acharya-21/internal-payment-gateway/internal/database"
 	"github.com/Mithun-Acharya-21/internal-payment-gateway/internal/handler"

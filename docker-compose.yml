@@ -1,7 +1,6 @@
 version: "3.9"
 
 services:
-  # ── Application ────────────────────────────────────────────────────────────
   app:
     build:
       context: .
@@ -29,7 +28,6 @@ services:
       timeout: 5s
       retries: 3
 
-  # ── PostgreSQL ─────────────────────────────────────────────────────────────
   postgres:
     image: postgres:16-alpine
     container_name: payment-postgres
@@ -51,7 +49,6 @@ services:
       timeout: 5s
       retries: 5
 
-  # ── Adminer (DB UI for dev) ────────────────────────────────────────────────
   adminer:
     image: adminer:4
     container_name: payment-adminer
